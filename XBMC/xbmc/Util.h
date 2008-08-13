@@ -73,9 +73,7 @@ namespace MathUtils
     if (x + std::numeric_limits<double>::epsilon() >= static_cast <double>(INT_MAX / 2) + 1.0 + std::numeric_limits<double>::epsilon())
       return INT_MIN;
 
-    #ifndef __APPLE__
-        const float round_to_nearest = 0.5f;
-    #endif
+    const float round_to_nearest = 0.5f;
     int i;
     
 #ifndef _LINUX
@@ -89,7 +87,7 @@ namespace MathUtils
     }
 #else
     #ifdef __APPLE__
-        i = lrint(x);
+        i = floor(x + round_to_nearest);
     #else
         __asm__ (
             "fld %1\n\t"
