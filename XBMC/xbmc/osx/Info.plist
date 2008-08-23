@@ -13,21 +13,21 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>XBMC</string>
+	<string>XBMC Media Center</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.1</string>
+	<string>8.10 (Atlantis Alpha 4) r####</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>LSEnvironment</key>
 	<dict>
-	  <key>XBMC_HOME</key>
-	  <string>/Library/Application Support/XBMC</string>
+		<key>XBMC_HOME</key>
+		<string>/Library/Application Support/XBMC</string>
 	</dict>
 </dict>
 </plist>
