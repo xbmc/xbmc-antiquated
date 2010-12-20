@@ -171,6 +171,7 @@ class CAdvancedSettings
     CStdStringArray m_pathSubstitutions;
     int m_remoteDelay; ///< \brief number of remote messages to ignore before repeating
     float m_controllerDeadzone;
+    bool m_bReadControllerIfNotFocused;
 
     bool m_playlistAsFolders;
     bool m_detectAsUdf;
