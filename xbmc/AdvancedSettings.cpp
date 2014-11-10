@@ -167,6 +167,7 @@ void CAdvancedSettings::Initialize()
 
   m_remoteDelay = 3;
   m_controllerDeadzone = 0.2f;
+  m_bReadControllerIfNotFocused = false;
 
   m_playlistAsFolders = true;
   m_detectAsUdf = false;
@@ -771,6 +772,7 @@ bool CAdvancedSettings::Load()
 
   XMLUtils::GetInt(pRootElement, "remotedelay", m_remoteDelay, 1, 20);
   XMLUtils::GetFloat(pRootElement, "controllerdeadzone", m_controllerDeadzone, 0.0f, 1.0f);
+  XMLUtils::GetBoolean(pRootElement, "readcontrollerifnotfocused", m_bReadControllerIfNotFocused);
   XMLUtils::GetInt(pRootElement, "thumbsize", m_thumbSize, 0, 1024);
   XMLUtils::GetInt(pRootElement, "fanartheight", m_fanartHeight, 0, 1080);
   XMLUtils::GetBoolean(pRootElement, "useddsfanart", m_useDDSFanart);
